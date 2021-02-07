@@ -4,7 +4,7 @@ const url = 'http://api.weatherstack.com/current?access_key=b5b9c3b9e7791900c6f3
 const request = http.request(url, (response)=>{
     let data ='';
     
-    response.on('data', (chunk) =>{
+    response.on('data', (chunk) => {
         data = data + chunk.toString();
     });
 
